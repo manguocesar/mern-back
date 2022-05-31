@@ -1,0 +1,48 @@
+
+GET  http://localhost:8000/api/customer/62941b222042f490f91b41a9
+
+###
+PUT  http://localhost:8000/api/customer/6294224d8862ed0f56f35793
+Content-Type: application/json
+
+{
+  "userName": "jack",
+  "age": 30,
+  "isDev": false
+}
+
+###
+DELETE  http://localhost:8000/api/customer/6294224d8862ed0f56f35793
+
+###
+GET  http://localhost:8000/api/customer
+
+###
+POST  http://localhost:8000/api/customer
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTQxNzQxNGZlZDUwZmYyYzFkMzYyMCIsImFkbWluIjpmYWxzZSwiaWF0IjoxNjUzOTU3Nzg1fQ.DCXF1WX7Y34HFxOCD5Ll86QdWnF4c7t2X3wCa47WtBw",
+  "userName": "Vrai",
+  "age": 26,
+  "isDev": true
+}
+
+### register
+POST  http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "cesar",
+  "email": "test@email.com",
+  "password": "cesarcesar"
+}
+
+### login
+POST  http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "cesar",
+  "password": "cesarcesar"
+}
